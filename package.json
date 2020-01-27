@@ -1,0 +1,23 @@
+{
+  "name": "alu",
+  "version": "1.0.0",
+  "description": "Translation server and javascript client for translations. Ideal for a micro-services environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorfern91/alu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorfern91/alu/issues"
+  },
+  "homepage": "https://github.com/victorfern91/alu#readme",
+  "dependencies": {
+    "csv-parse": "^4.8.5",
+    "lodash": "^4.17.15"
+  }
+}
