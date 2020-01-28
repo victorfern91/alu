@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/victorfern91/alu#readme",
   "dependencies": {
+    "chokidar": "^3.3.1",
     "csv-parse": "^4.8.5",
     "lodash": "^4.17.15"
   }
