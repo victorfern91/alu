@@ -19,6 +19,9 @@
   "dependencies": {
     "chokidar": "^3.3.1",
     "csv-parse": "^4.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
     "lodash": "^4.17.15"
   }
 }

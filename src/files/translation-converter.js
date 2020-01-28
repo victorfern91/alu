@@ -2,6 +2,8 @@ const parse = require('csv-parse');
 const { set } = require('lodash');
 const fs = require('fs');
 
+const { writeJSON } = require('../utils/fs');
+
 module.exports = filepath => {
   const output = {};
 
@@ -20,16 +22,12 @@ module.exports = filepath => {
       }
     })
     .on('end', () => {
+        const availableLanguages = Object.keys(output);
+
+        writeJSON(`${process.cwd()}/static/languages.json`, availableLanguages);
+
         Object.keys(output).forEach(language => {
-            fs.writeFile(
-                `${process.cwd()}/static/${language}.json`,
-                JSON.stringify(output[language], null, 2),
-                (err) => {
-                    if (err) {
-                        throw new Error('Ups! :(', err);
-                    }
-                }
-            );
+            writeJSON(`${process.cwd()}/static/${language}.json`, output[language]);
         })
     });
 }

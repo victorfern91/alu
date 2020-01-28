@@ -1,6 +1,7 @@
 {
   "confirmation": {
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "question": "What's up?"
   }
 }

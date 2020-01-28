@@ -1,5 +1,4 @@
 const chokidar = require('chokidar');
-const { noop } = require('lodash');
 
 class FileWatcher {
     constructor(filepath = null) {
